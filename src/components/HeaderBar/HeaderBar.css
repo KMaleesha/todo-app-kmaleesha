@@ -1,0 +1,26 @@
+.headerBar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 2px 20px;
+    height: 60px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); 
+    border: #e9e6e6;
+}
+
+.headerRight {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.bellIcon, .userIcon {
+    cursor: pointer;
+}
+
+.userIcon img {
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+}

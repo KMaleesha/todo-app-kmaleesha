@@ -1,38 +1,64 @@
 .App {
-  text-align: center;
+  width: 100%;
+  height: 100vh;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.container {
   display: flex;
-  flex-direction: column;
+  flex: 1; /* This allows it to take the full remaining vertical space */
+  margin-left: 200px; /* Push the container to the right by the width of the sidebar */
+}
+
+main {
+  width: calc(100% - 200px); /* Subtract the width of the sidebar */
+  padding: 20px;
+}
+
+.top_section {
+  display: flex;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  padding: 20px 15px;
+}
+
+.logo {
+  font-size: 30px;
+}
+
+.bars {
+  display: flex;
+  font-size: 25px;
+  margin-left: 50px;
+}
+
+.HeaderBar {
+  width: calc(100% - 272px); /* Subtract the width of the sidebar */
+  height: 50px;
+  background-color: #333;
   color: white;
+  margin-left: 272px; /* Push the header to the right by the width of the sidebar */
 }
 
-.App-link {
-  color: #61dafb;
+.mainContent {
+  display: flex;
+  flex-direction: row;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.SideNavBar {
+  width: 272px;
+  background-color: #555;
+  color: white;
+  padding: 20px;
+  position: fixed; /* Make it stick to the left */
+}
+
+.content {
+  flex: 1; /* takes up the rest of the horizontal space after the sidebar */
+  padding: 0px;
+  background-color: #eee;
 }
