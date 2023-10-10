@@ -1,6 +1,8 @@
 .notificationBox {
     padding: 20px 40px;  /* Provides space from the container edges */
     position: relative; 
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 .contentWrapper{
@@ -9,12 +11,6 @@
     border-radius: 8px;
     padding: 10px 20px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.welcomeText {
-    font-weight: bold;
-    font-size: 1.2em;
-    margin-right: 20px;
 }
 
 .notificationBox p {

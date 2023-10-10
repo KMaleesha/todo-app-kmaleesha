@@ -2,40 +2,11 @@
   width: 100%;
   height: 100vh;
 }
-
 * {
   margin: 0;
   padding: 0;
   text-decoration: none;
 }
-
-.container {
-  display: flex;
-  flex: 1; /* This allows it to take the full remaining vertical space */
-  margin-left: 200px; /* Push the container to the right by the width of the sidebar */
-}
-
-main {
-  width: calc(100% - 200px); /* Subtract the width of the sidebar */
-  padding: 20px;
-}
-
-.top_section {
-  display: flex;
-  align-items: center;
-  padding: 20px 15px;
-}
-
-.logo {
-  font-size: 30px;
-}
-
-.bars {
-  display: flex;
-  font-size: 25px;
-  margin-left: 50px;
-}
-
 .HeaderBar {
   width: calc(100% - 272px); /* Subtract the width of the sidebar */
   height: 50px;
@@ -43,12 +14,10 @@ main {
   color: white;
   margin-left: 272px; /* Push the header to the right by the width of the sidebar */
 }
-
 .mainContent {
   display: flex;
   flex-direction: row;
 }
-
 .SideNavBar {
   width: 272px;
   background-color: #555;
@@ -56,9 +25,14 @@ main {
   padding: 20px;
   position: fixed; /* Make it stick to the left */
 }
-
 .content {
   flex: 1; /* takes up the rest of the horizontal space after the sidebar */
   padding: 0px;
   background-color: #eee;
+}
+
+.content-container{
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* This will divide the content div into two equal parts */
+  gap: 5px;
 }
