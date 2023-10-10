@@ -1,5 +1,5 @@
 .activityFeed {
-    padding: 20px 40px;  /* Provides space from the container edges */
+    padding: 20px 40px; 
     position: relative; 
     padding-left: 10px;
     padding-right: 20px;
@@ -34,22 +34,4 @@
     color: #777;
 }
 
-.pagination {
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;
-}
-
-.pagination button {
-    padding: 5px 10px;
-    margin: 0 5px;
-    border: none;
-    background-color: #eee;
-    cursor: pointer;
-}
-
-.pagination button.active {
-    background-color: #007BFF;
-    color: white;
-}
 

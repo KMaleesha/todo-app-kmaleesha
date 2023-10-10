@@ -8,11 +8,11 @@
   text-decoration: none;
 }
 .HeaderBar {
-  width: calc(100% - 272px); /* Subtract the width of the sidebar */
+  width: calc(100% - 272px); 
   height: 50px;
   background-color: #333;
   color: white;
-  margin-left: 272px; /* Push the header to the right by the width of the sidebar */
+  margin-left: 272px;
 }
 .mainContent {
   display: flex;
@@ -23,16 +23,16 @@
   background-color: #555;
   color: white;
   padding: 20px;
-  position: fixed; /* Make it stick to the left */
+  position: fixed;
 }
 .content {
-  flex: 1; /* takes up the rest of the horizontal space after the sidebar */
+  flex: 1;
   padding: 0px;
   background-color: #eee;
 }
 
 .content-container{
   display: grid;
-  grid-template-columns: 1fr 1fr; /* This will divide the content div into two equal parts */
+  grid-template-columns: 1fr 1fr;
   gap: 5px;
 }
