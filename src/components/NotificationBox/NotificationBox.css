@@ -1,8 +1,9 @@
 .notificationBox {
-    padding: 20px 40px;  /* Provides space from the container edges */
+    padding: 20px 40px; 
     position: relative; 
     padding-left: 20px;
     padding-right: 20px;
+    font-size: small;
 }
 
 .contentWrapper{
@@ -28,6 +29,6 @@
     font-size: 1.2em;
     cursor: pointer;
     position: absolute;
-    top: 35px;  /* Adjust as needed */
+    top: 35px;
     right: 60px;
 }
